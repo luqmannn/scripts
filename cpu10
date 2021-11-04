@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+
+cpu10=$(ps axch -o cmd:15,%cpu --sort=-%cpu | head)
+printf "%s \n" "$cpu10"

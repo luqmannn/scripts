@@ -1,0 +1,5 @@
+#! /usr/bin/bash
+
+temp=$(sensors | awk '/^Tctl:/ {print $2}')
+icon="🤒"
+printf " %s %s \n" "$icon" "$temp"

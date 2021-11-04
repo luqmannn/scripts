@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+
+ipbr=$(ip a show scope global dynamic | awk '$1 == "inet" {print $2, $4}')
+printf " %s %s \n" "$ipbr"

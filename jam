@@ -1,0 +1,5 @@
+#! /usr/bin/bash
+
+clock=$(date +%R)
+icon="⏰"
+printf " %s %s \n" "$icon" "$clock"

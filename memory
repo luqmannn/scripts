@@ -1,0 +1,5 @@
+#! /usr/bin/bash
+
+memory=$(free -h | awk '/^Mem:/ {print $3 "/" $2}')
+icon="🧠"
+printf " %s %s \n" "$icon" "$memory"
