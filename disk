@@ -1,5 +1,5 @@
 #! /usr/bin/bash
 
-disk=$(df -h -t btrfs | awk '(NR>1) {print $3 "/" $2}' | uniq)
+disk=$(df -h -t ext4 | awk '(NR>1) {print $3 "/" $2}' | uniq)
 icon="💾"
 printf " %s %s \n" "$icon" "$disk"
